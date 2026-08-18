@@ -1,0 +1,49 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ArticleCard from './ArticleCard.astro';
+
+interface Props {
+  currentArticleId: string;
+  category: string;
+  allArticles: CollectionEntry<'news'>[];
+}
+
+const { currentArticleId, category, allArticles } = Astro.props;
+
+// Filter out current article and prioritize same category
+const otherArticles = allArticles.filter((art) => art.id !== currentArticleId);
+const sameCategory = otherArticles.filter((art) => art.data.category === category);
+const differentCategory = otherArticles.filter((art) => art.data.category !== category);
+
+const related = [...sameCategory, ...differentCategory].slice(0, 3);
+---
+
+{related.length > 0 && (
+  <section class="mt-16 pt-12 border-t border-slate-200 dark:border-slate-800">
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">
+          Continue Exploring
+        </span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">
+          Related Stories & Guides
+        </h2>
+      </div>
+      <a
+        href="/"
+        class="hidden sm:inline-flex items-center gap-1 text-sm font-semibold text-brand-600 dark:text-brand-400 hover:text-brand-500 transition-colors"
+      >
+        <span>View all articles</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      {related.map((article) => (
+        <ArticleCard article={article} />
+      ))}
+    </div>
+  </section>
+)}

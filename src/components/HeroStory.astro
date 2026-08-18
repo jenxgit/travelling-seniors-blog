@@ -1,0 +1,111 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  article: CollectionEntry<'news'>;
+}
+
+const { article } = Astro.props;
+const { title, description, pubDate, category, author, image, readingTime } = article.data;
+
+const formattedDate = new Intl.DateTimeFormat('en-US', {
+  month: 'short',
+  day: 'numeric',
+  year: 'numeric',
+}).format(pubDate);
+
+const slug = article.id;
+const categorySlug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+---
+
+<section class="relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl group transition-all duration-300">
+  <div class="grid grid-cols-1 lg:grid-cols-12 min-h-[460px] lg:min-h-[520px]">
+    
+    <!-- Image Column (7 cols on lg) -->
+    <div class="relative lg:col-span-7 h-72 sm:h-96 lg:h-full overflow-hidden order-1 lg:order-2">
+      <img
+        src={image.url}
+        alt={image.alt}
+        class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent lg:bg-gradient-to-r lg:from-slate-900 lg:via-slate-900/40 lg:to-transparent"></div>
+      
+      {image.caption && (
+        <div class="absolute bottom-3 right-4 hidden sm:block bg-black/60 backdrop-blur-md px-3 py-1 rounded-lg text-[11px] text-slate-300">
+          📷 {image.caption}
+        </div>
+      )}
+    </div>
+
+    <!-- Content Column (5 cols on lg) -->
+    <div class="relative lg:col-span-5 p-6 sm:p-8 lg:p-10 flex flex-col justify-between order-2 lg:order-1 z-10 bg-slate-900/95 lg:bg-transparent">
+      
+      <!-- Top badges & meta -->
+      <div class="space-y-4">
+        <div class="flex flex-wrap items-center gap-2.5">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-brand-500 text-white uppercase tracking-wider shadow-sm shadow-brand-500/50">
+            <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+            Featured Story
+          </span>
+          
+          <a
+            href={`/category/${categorySlug}`}
+            class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-amber-300 hover:bg-white/20 transition-colors"
+          >
+            {category}
+          </a>
+
+          <span class="text-xs text-slate-400 font-medium">
+            {readingTime || '5 min read'}
+          </span>
+        </div>
+
+        <!-- Headline -->
+        <h2 class="font-serif text-2xl sm:text-3xl lg:text-3xl xl:text-4xl font-bold text-white leading-tight tracking-tight hover:text-brand-300 transition-colors">
+          <a href={`/news/${slug}`}>
+            {title}
+          </a>
+        </h2>
+
+        <!-- Excerpt -->
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed line-clamp-3 font-normal">
+          {description}
+        </p>
+      </div>
+
+      <!-- Bottom Author & CTA -->
+      <div class="pt-6 mt-6 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <!-- Author info -->
+        <div class="flex items-center gap-3">
+          <img
+            src={author.avatar}
+            alt={author.name}
+            class="w-10 h-10 rounded-full object-cover ring-2 ring-brand-500/40"
+          />
+          <div>
+            <div class="text-sm font-bold text-white">{author.name}</div>
+            <div class="text-xs text-slate-400 flex items-center gap-2">
+              <span>{author.role || 'Travel Editor'}</span>
+              <span>•</span>
+              <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <a
+          href={`/news/${slug}`}
+          class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-brand-600 to-amber-500 hover:from-brand-500 hover:to-amber-400 shadow-lg shadow-brand-500/30 group-hover:gap-3 transition-all"
+        >
+          <span>Read Story</span>
+          <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,84 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  articleDate?: string;
+  category?: string;
+}
+
+const {
+  title,
+  description = "The premier digital travel and lifestyle journal for active seniors and mature explorers.",
+  image = "https://images.unsplash.com/photo-1532103054090-a33923a7c52d?auto=format&fit=crop&w=1600&h=900&q=80",
+  articleDate,
+  category,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://travellingsenior.example.com');
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ea6104' stroke-width='2'><circle cx='12' cy='12' r='10'/><polygon points='16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76' fill='%23ea6104' fill-opacity='0.4'/></svg>" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title} | TravellingSenior</title>
+    <meta name="title" content={`${title} | TravellingSenior`} />
+    <meta name="description" content={description} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={articleDate ? "article" : "website"} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={`${title} | TravellingSenior`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={`${title} | TravellingSenior`} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image} />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme Initialization Script (Zero-Flicker) -->
+    <script is:inline>
+      const getThemePreference = () => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+      const isDark = getThemePreference() === 'dark';
+      document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col bg-sand-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+    <Header currentCategory={category} currentPath={Astro.url.pathname} />
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>

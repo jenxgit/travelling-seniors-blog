@@ -1,0 +1,50 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    @apply bg-sand-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased transition-colors duration-300 selection:bg-brand-500 selection:text-white min-h-screen flex flex-col;
+  }
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 dark:bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-slate-700 rounded-full hover:bg-brand-500 dark:hover:bg-brand-500 transition-colors;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  @apply bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 shadow-sm;
+}
+
+.glass-card {
+  @apply bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border border-slate-200/70 dark:border-slate-800/70 transition-all duration-300;
+}
+
+.glass-nav {
+  @apply bg-white/85 dark:bg-slate-950/85 backdrop-blur-lg border-b border-slate-200/70 dark:border-slate-800/70;
+}
+
+/* Subtle glow effects */
+.brand-gradient {
+  @apply bg-gradient-to-r from-brand-600 via-brand-500 to-amber-500;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-600 via-brand-500 to-amber-500;
+}

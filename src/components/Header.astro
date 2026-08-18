@@ -1,0 +1,183 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+
+interface Props {
+  currentCategory?: string;
+  currentPath?: string;
+}
+
+const { currentPath = '' } = Astro.props;
+
+const categories = [
+  { name: 'All Stories', href: '/' },
+  { name: 'Destinations', href: '/category/destinations' },
+  { name: 'Cruises & Rail', href: '/category/cruises-rail' },
+  { name: 'Health & Wellness', href: '/category/health-wellness' },
+  { name: 'Travel Tips', href: '/category/travel-tips' },
+  { name: 'Budget & Deals', href: '/category/budget-deals' },
+];
+
+const normalizedPath = currentPath || Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 glass-nav transition-colors duration-300">
+  <!-- Top ticker / notice banner -->
+  <div class="hidden lg:block bg-gradient-to-r from-navy-950 via-slate-900 to-navy-950 text-white/90 text-xs py-1.5 px-4 text-center border-b border-white/10 font-medium">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-brand-500 text-white uppercase tracking-wider">Special Issue</span>
+        <span>Senior Passport & Rail Guide 2026: What's New Across Europe & Japan</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <span>Updated Daily</span>
+        <span>•</span>
+        <a href="#newsletter" class="hover:text-brand-400 transition-colors">Free Weekly Digest</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      
+      <!-- Brand Logo & Title -->
+      <a href="/" class="group flex items-center gap-3 focus:outline-none">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-600 to-amber-400 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="currentColor" fill-opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+            TravellingSenior
+          </span>
+          <span class="text-[11px] uppercase tracking-widest font-semibold text-brand-600 dark:text-brand-400">
+            The Journal for Ageless Explorers
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Category Links -->
+      <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2">
+        {categories.map((cat) => {
+          const isActive =
+            cat.href === '/'
+              ? normalizedPath === '/'
+              : normalizedPath.toLowerCase().includes(cat.href.toLowerCase());
+
+          return (
+            <a
+              href={cat.href}
+              class={`px-3.5 py-2 rounded-xl text-sm font-semibold transition-all duration-200 ${
+                isActive
+                  ? 'text-brand-600 dark:text-brand-400 bg-brand-50/80 dark:bg-brand-950/40 shadow-sm'
+                  : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-slate-800/60'
+              }`}
+            >
+              {cat.name}
+            </a>
+          );
+        })}
+      </nav>
+
+      <!-- Right Actions: Search / Newsletter / Theme Toggle / Mobile Menu -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <ThemeToggle />
+
+        <a
+          href="#newsletter"
+          class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-brand-600 to-amber-500 hover:from-brand-500 hover:to-amber-400 shadow-md shadow-brand-500/25 transition-all transform hover:-translate-y-0.5"
+        >
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <span>Subscribe</span>
+        </a>
+
+        <!-- Mobile menu toggle button -->
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          class="lg:hidden p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <svg id="menu-icon" class="w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl px-4 pt-3 pb-6 space-y-2">
+    <div class="grid gap-1">
+      {categories.map((cat) => {
+        const isActive =
+          cat.href === '/'
+            ? normalizedPath === '/'
+            : normalizedPath.toLowerCase().includes(cat.href.toLowerCase());
+
+        return (
+          <a
+            href={cat.href}
+            class={`block px-4 py-2.5 rounded-xl text-base font-semibold transition-colors ${
+              isActive
+                ? 'text-brand-600 dark:text-brand-400 bg-brand-50/80 dark:bg-brand-950/40'
+                : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'
+            }`}
+          >
+            {cat.name}
+          </a>
+        );
+      })}
+    </div>
+
+    <div class="pt-4 mt-4 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-3">
+      <a
+        href="#newsletter"
+        class="w-full text-center py-2.5 px-4 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-brand-600 to-amber-500 hover:from-brand-500 hover:to-amber-400 shadow-md shadow-brand-500/20"
+      >
+        Subscribe to Free Weekly Digest
+      </a>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  const initMobileMenu = () => {
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    if (!btn || !menu) return;
+
+    btn.addEventListener('click', () => {
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!isExpanded));
+      menu.classList.toggle('hidden');
+      menuIcon?.classList.toggle('hidden');
+      closeIcon?.classList.toggle('hidden');
+    });
+
+    // Close menu when clicking a link
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+        menuIcon?.classList.remove('hidden');
+        closeIcon?.classList.add('hidden');
+      });
+    });
+  };
+
+  initMobileMenu();
+  document.addEventListener('astro:after-swap', initMobileMenu);
+</script>

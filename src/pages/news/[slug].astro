@@ -1,0 +1,181 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RelatedStories from '../../components/RelatedStories.astro';
+import ReadingProgressBar from '../../components/ReadingProgressBar.astro';
+
+export async function getStaticPaths() {
+  const newsEntries = await getCollection('news');
+  return newsEntries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const allArticles = await getCollection('news');
+
+// Render markdown body content
+const { Content } = await render(entry);
+
+const { title, description, pubDate, category, author, image, tags, readingTime } = entry.data;
+
+const formattedDate = new Intl.DateTimeFormat('en-US', {
+  weekday: 'long',
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+}).format(pubDate);
+
+const categorySlug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const currentArticleId = entry.id;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={image.url}
+  articleDate={pubDate.toISOString()}
+  category={category}
+>
+  <ReadingProgressBar />
+
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-10">
+    
+    <!-- Breadcrumb & Category Badge -->
+    <nav class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Home</a>
+      <span>/</span>
+      <a href={`/category/${categorySlug}`} class="text-brand-600 dark:text-brand-400 hover:underline">
+        {category}
+      </a>
+      <span>/</span>
+      <span class="truncate max-w-[200px] sm:max-w-xs text-slate-400 dark:text-slate-500">
+        {title}
+      </span>
+    </nav>
+
+    <!-- Post Header -->
+    <header class="space-y-6">
+      <div class="flex flex-wrap items-center gap-3">
+        <a
+          href={`/category/${categorySlug}`}
+          class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-500 text-white shadow-sm shadow-brand-500/30"
+        >
+          {category}
+        </a>
+        <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold">
+          ⏱️ {readingTime || '5 min read'}
+        </span>
+      </div>
+
+      <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white leading-[1.15] tracking-tight">
+        {title}
+      </h1>
+
+      <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
+        {description}
+      </p>
+
+      <!-- Author Metadata Row -->
+      <div class="pt-6 border-t border-b border-slate-200 dark:border-slate-800 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="flex items-center gap-3.5">
+          <img
+            src={author.avatar}
+            alt={author.name}
+            class="w-12 h-12 rounded-full object-cover ring-2 ring-brand-500/30"
+          />
+          <div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white">
+              {author.name}
+            </div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 flex flex-wrap items-center gap-1.5">
+              <span>{author.role || 'Senior Travel Editor'}</span>
+              <span>•</span>
+              <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+            </div>
+          </div>
+        </div>
+
+        <!-- Share Actions -->
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-1">Share:</span>
+          <button
+            onclick="navigator.clipboard.writeText(window.location.href); alert('Link copied to clipboard!');"
+            class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-brand-500 hover:text-white dark:hover:bg-brand-500 dark:hover:text-white transition-colors"
+            title="Copy link"
+            aria-label="Copy article link"
+          >
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Image Container -->
+    <figure class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200/80 dark:border-slate-800/80 bg-slate-100 dark:bg-slate-900">
+      <div class="aspect-[16/9] overflow-hidden">
+        <img
+          src={image.url}
+          alt={image.alt}
+          class="w-full h-full object-cover"
+          loading="eager"
+        />
+      </div>
+      {image.caption && (
+        <figcaption class="p-3 sm:p-4 text-center text-xs text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-900/90 border-t border-slate-200 dark:border-slate-800">
+          📷 {image.caption}
+        </figcaption>
+      )}
+    </figure>
+
+    <!-- Markdown Article Content -->
+    <div class="prose prose-lg dark:prose-invert prose-brand max-w-none pt-4">
+      <Content />
+    </div>
+
+    <!-- Tags Pill List -->
+    {tags && tags.length > 0 && (
+      <div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center gap-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-2">Topics:</span>
+        {tags.map((tag) => (
+          <span class="px-3 py-1 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+            #{tag}
+          </span>
+        ))}
+      </div>
+    )}
+
+    <!-- Author Bio Card -->
+    <div class="rounded-3xl p-6 sm:p-8 glass-panel flex flex-col sm:flex-row items-center sm:items-start gap-5">
+      <img
+        src={author.avatar}
+        alt={author.name}
+        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover ring-4 ring-brand-500/20 flex-shrink-0"
+      />
+      <div class="space-y-2 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+          <h3 class="font-serif text-lg font-bold text-slate-900 dark:text-white">
+            About {author.name}
+          </h3>
+          <span class="text-xs font-semibold px-2 py-0.5 rounded bg-brand-50 dark:bg-brand-950/60 text-brand-700 dark:text-brand-300 inline-block">
+            {author.role || 'Senior Travel Editor'}
+          </span>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Contributing senior travel analyst focusing on accessible global transport, cultural slow tourism, and high-value itineraries for retired explorers.
+        </p>
+      </div>
+    </div>
+
+    <!-- Related Stories Grid -->
+    <RelatedStories
+      currentArticleId={currentArticleId}
+      category={category}
+      allArticles={allArticles}
+    />
+
+  </article>
+</BaseLayout>
