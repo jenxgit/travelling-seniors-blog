@@ -8,5 +8,5 @@
 | Health & Wellness | Staying Active on a Long-Haul Flight | A physio's simple in-seat routine | approved | 2026-08-26 |
 | Travel Tips | The Seniors Card Checklist for Overseas Trips | Which discounts actually travel with you | approved | 2026-08-26 |
 | Travel Tips | Packing Light After 60 | A two-bag rule for long trips | approved | 2026-08-26 |
-| Budget & Deals | Off-Peak Qantas and Jetstar Fares | When Australian retirees get the best prices | approved | 2026-08-26 |
+| Budget & Deals | Off-Peak Qantas and Jetstar Fares | When Australian retirees get the best prices | published (https://github.com/jenxgit/travelling-seniors-blog/commit/ebb2ae4f4773bf23488ab1cd0903d9df695a2aa6) | 2026-08-26 |
 | Budget & Deals | Long-Stay Airbnb vs Hotel | Which saves more over a month abroad | approved | 2026-08-26 |
