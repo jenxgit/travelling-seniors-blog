@@ -10,9 +10,9 @@ author:
   role: "Senior Train Travel Specialist"
   avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&h=200&q=80"
 image:
-  url: "https://images.unsplash.com/photo-1532103054090-a33923a7c52d?auto=format&fit=crop&w=1600&h=900&q=80"
-  alt: "Red panoramic train travelling through Swiss alpine mountains and lush green valleys"
-  caption: "The Glacier Express crossing the iconic Landwasser Viaduct in the Swiss Alps"
+  url: "https://images.unsplash.com/photo-1635453424231-14b3c84584fb?auto=format&fit=crop&w=1600&h=900&q=80"
+  alt: "Red panoramic train travelling through snow-covered mountains in the Swiss Alps near St. Moritz"
+  caption: "A red alpine train winds through the Graubünden mountains in the Swiss Alps"
 tags: ["Europe", "Train Travel", "Scenic Routes", "Slow Travel", "Switzerland"]
 ---
 
