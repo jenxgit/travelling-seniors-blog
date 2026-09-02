@@ -1,6 +1,6 @@
 | Category | Working title | Angle | Status | Date added |
 |---|---|---|---|---|
-| Destinations | New Zealand's South Island by Campervan | A slow traveller's guide to the drive-it-yourself South Island | approved | 2026-08-26 |
+| Destinations | New Zealand's South Island by Campervan | A slow traveller's guide to the drive-it-yourself South Island | published (https://github.com/jenxgit/travelling-seniors-blog/commit/f6cfee32039450d31a4cc958df73733ddd50ecdf) | 2026-08-26 |
 | Destinations | Tasmania's Quietest Wine Regions | Autumn touring away from the crowds | approved | 2026-08-26 |
 | Cruises & Rail | The Indian Pacific for First-Timers | Sydney-to-Perth by rail, what to expect | published (https://github.com/jenxgit/travelling-seniors-blog/commit/08728ea477efcf4c1d487c62f8f2a380e53d761c) | 2026-08-26 |
 | Cruises & Rail | River Cruising vs Ocean Cruising After 60 | Which suits which kind of traveller | approved | 2026-08-26 |
