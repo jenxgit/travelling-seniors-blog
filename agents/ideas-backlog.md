@@ -10,3 +10,13 @@
 | Travel Tips | Packing Light After 60 | A two-bag rule for long trips | approved | 2026-08-26 |
 | Budget & Deals | Off-Peak Qantas and Jetstar Fares | When Australian retirees get the best prices | published (https://github.com/jenxgit/travelling-seniors-blog/commit/ebb2ae4f4773bf23488ab1cd0903d9df695a2aa6) | 2026-08-26 |
 | Budget & Deals | Long-Stay Airbnb vs Hotel | Which saves more over a month abroad | approved | 2026-08-26 |
+| Destinations | Norfolk Island: The Slow, Uncrowded Pacific Escape | Direct flights from Sydney/Brisbane, low crowds, walkable history, ideal spring/summer window | proposed | 2026-09-02 |
+| Destinations | Chasing Momiji: A First-Timer's Guide to Japan's Autumn Colour Season | Foliage season scenery and food, not onsen bathing; timed for Oct-Nov AU departures | proposed | 2026-09-02 |
+| Cruises & Rail | Kimberley Expedition Cruising: Why the Dry Season Window Is Now | Small-ship Broome-Darwin gorges and waterfalls before the wet season closes it out | proposed | 2026-09-02 |
+| Cruises & Rail | River Cruising to Europe's Christmas Markets | Timing a Danube river cruise for December, booking windows for AU departures | proposed | 2026-09-02 |
+| Health & Wellness | The Pre-Trip Health Checklist | Vaccinations, GP letters and prescription paperwork 6-8 weeks before you fly | proposed | 2026-09-02 |
+| Health & Wellness | Travelling Solo After 60 | Staying connected and beating loneliness on the road, riding the rise in solo senior travel | proposed | 2026-09-02 |
+| Travel Tips | Crossing Borders with Medications | Documentation, customs declarations and refill logistics for your carry-on | proposed | 2026-09-02 |
+| Travel Tips | The Over-60's Guide to Travel Apps | Boarding passes, translation and offline maps made simple for less tech-confident travellers | proposed | 2026-09-02 |
+| Budget & Deals | The $2.50 Fare Most Retirees Don't Know About | NSW and QLD Country Pensioner Excursion concession fares on regional rail | proposed | 2026-09-02 |
+| Budget & Deals | Making Frequent Flyer Points Work Harder in Retirement | Classic Rewards seat releases, status credit runs and points expiry traps | proposed | 2026-09-02 |
