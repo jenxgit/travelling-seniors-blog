@@ -3,7 +3,7 @@
 | Destinations | New Zealand's South Island by Campervan | A slow traveller's guide to the drive-it-yourself South Island | published (https://github.com/jenxgit/travelling-seniors-blog/commit/f6cfee32039450d31a4cc958df73733ddd50ecdf) | 2026-08-26 |
 | Destinations | Tasmania's Quietest Wine Regions | Autumn touring away from the crowds | published (https://github.com/jenxgit/travelling-seniors-blog/commit/a4bd945ea4d8b6a98c696615ee289012ab1c5ebc) | 2026-08-26 |
 | Cruises & Rail | The Indian Pacific for First-Timers | Sydney-to-Perth by rail, what to expect | published (https://github.com/jenxgit/travelling-seniors-blog/commit/08728ea477efcf4c1d487c62f8f2a380e53d761c) | 2026-08-26 |
-| Cruises & Rail | River Cruising vs Ocean Cruising After 60 | Which suits which kind of traveller | approved | 2026-08-26 |
+| Cruises & Rail | River Cruising vs Ocean Cruising After 60 | Which suits which kind of traveller | published (https://github.com/jenxgit/travelling-seniors-blog/commit/a0acd69b9422d8548fae6ee2769ea7ad3d94a30e) | 2026-08-26 |
 | Health & Wellness | Walking Holidays for Joint Health | Gentle trails across Australia and NZ | published (https://github.com/jenxgit/travelling-seniors-blog/commit/7041af8b9244a92fd87e69ba202b3e4a4df3aeba) | 2026-08-26 |
 | Health & Wellness | Staying Active on a Long-Haul Flight | A physio's simple in-seat routine | approved | 2026-08-26 |
 | Travel Tips | The Seniors Card Checklist for Overseas Trips | Which discounts actually travel with you | published (https://github.com/jenxgit/travelling-seniors-blog/commit/82f20c97670640513e1b76a7f844132b75677680) | 2026-08-26 |
