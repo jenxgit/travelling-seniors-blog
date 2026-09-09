@@ -5,7 +5,7 @@
 | Cruises & Rail | The Indian Pacific for First-Timers | Sydney-to-Perth by rail, what to expect | published (https://github.com/jenxgit/travelling-seniors-blog/commit/08728ea477efcf4c1d487c62f8f2a380e53d761c) | 2026-08-26 |
 | Cruises & Rail | River Cruising vs Ocean Cruising After 60 | Which suits which kind of traveller | published (https://github.com/jenxgit/travelling-seniors-blog/commit/a0acd69b9422d8548fae6ee2769ea7ad3d94a30e) | 2026-08-26 |
 | Health & Wellness | Walking Holidays for Joint Health | Gentle trails across Australia and NZ | published (https://github.com/jenxgit/travelling-seniors-blog/commit/7041af8b9244a92fd87e69ba202b3e4a4df3aeba) | 2026-08-26 |
-| Health & Wellness | Staying Active on a Long-Haul Flight | A physio's simple in-seat routine | approved | 2026-08-26 |
+| Health & Wellness | Staying Active on a Long-Haul Flight | A physio's simple in-seat routine | published (https://github.com/jenxgit/travelling-seniors-blog/commit/c228c2ee981b0321e616f5a69a8e0eb10a9cbdd2) | 2026-08-26 |
 | Travel Tips | The Seniors Card Checklist for Overseas Trips | Which discounts actually travel with you | published (https://github.com/jenxgit/travelling-seniors-blog/commit/82f20c97670640513e1b76a7f844132b75677680) | 2026-08-26 |
 | Travel Tips | Packing Light After 60 | A two-bag rule for long trips | approved | 2026-08-26 |
 | Budget & Deals | Off-Peak Qantas and Jetstar Fares | When Australian retirees get the best prices | published (https://github.com/jenxgit/travelling-seniors-blog/commit/ebb2ae4f4773bf23488ab1cd0903d9df695a2aa6) | 2026-08-26 |
