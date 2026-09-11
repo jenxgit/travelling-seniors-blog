@@ -7,7 +7,7 @@
 | Health & Wellness | Walking Holidays for Joint Health | Gentle trails across Australia and NZ | published (https://github.com/jenxgit/travelling-seniors-blog/commit/7041af8b9244a92fd87e69ba202b3e4a4df3aeba) | 2026-08-26 |
 | Health & Wellness | Staying Active on a Long-Haul Flight | A physio's simple in-seat routine | published (https://github.com/jenxgit/travelling-seniors-blog/commit/c228c2ee981b0321e616f5a69a8e0eb10a9cbdd2) | 2026-08-26 |
 | Travel Tips | The Seniors Card Checklist for Overseas Trips | Which discounts actually travel with you | published (https://github.com/jenxgit/travelling-seniors-blog/commit/82f20c97670640513e1b76a7f844132b75677680) | 2026-08-26 |
-| Travel Tips | Packing Light After 60 | A two-bag rule for long trips | approved | 2026-08-26 |
+| Travel Tips | Packing Light After 60 | A two-bag rule for long trips | published (https://github.com/jenxgit/travelling-seniors-blog/commit/7c27cc0710123366d4ed7d78d8627cd5c78ff885) | 2026-08-26 |
 | Budget & Deals | Off-Peak Qantas and Jetstar Fares | When Australian retirees get the best prices | published (https://github.com/jenxgit/travelling-seniors-blog/commit/ebb2ae4f4773bf23488ab1cd0903d9df695a2aa6) | 2026-08-26 |
 | Budget & Deals | Long-Stay Airbnb vs Hotel | Which saves more over a month abroad | approved | 2026-08-26 |
 | Destinations | Norfolk Island: The Slow, Uncrowded Pacific Escape | Direct flights from Sydney/Brisbane, low crowds, walkable history, ideal spring/summer window | proposed | 2026-09-02 |
