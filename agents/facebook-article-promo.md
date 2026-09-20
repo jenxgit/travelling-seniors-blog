@@ -1,25 +1,21 @@
 # Facebook article promo
 
-Process for promoting a just-published Travelling Seniors article on the Travelling Seniors Facebook Page via the Zapier "Facebook Pages" connector. Read this file directly in scheduled runs instead of trying to load a "facebook-article-promo" Claude skill — attempts to save that as a Claude skill via the app's "Save skill" button have failed (same error on two separate runs), so this doc is the source of truth until that's resolved.
+Process for promoting a just-published Travelling Seniors article on the Travelling Seniors Facebook Page via the **jinx-facebook-mcp** connector (tools: `get_page_info`, `create_post`, `create_photo_post`, `list_posts`). Read this file directly in scheduled runs instead of trying to load a "facebook-article-promo" Claude skill — attempts to save that as a Claude skill via the app's "Save skill" button have failed (same error on two separate runs), so this doc is the source of truth until that's resolved.
+
+This connector replaces the earlier Zapier "Facebook Pages" connection, which is no longer used for this workflow.
 
 ## Prerequisites
 
-Requires the Zapier connector's Facebook Pages connection with the `facebook_pages_create_page_post` action ("Create Page Post") enabled. Check with `inspect_zapier_actions({app: "Facebook Pages"})`. If it isn't enabled, use `discover_zapier_actions({app: "Facebook Pages"})` then `enable_zapier_action`.
+Requires the `jinx-facebook-mcp` connector to be attached to the session (scheduled runs need it added to the trigger's connector list, same as any other MCP connector). Confirm it's working before posting by calling `get_page_info` with no arguments — it should return the Page's `id`, `name`, and `link`. As of the last run this resolves to a single Page, "Travelling Seniors" (id `1265889076608766`). If `get_page_info` errors (e.g. an `appsecret_proof` or auth error), do not attempt to post — tell Pat the Facebook connector needs attention (include the exact error) and stop.
 
-Before posting, confirm the connection is healthy: `list_zapier_connections({selected_api: "FacebookV2CLIAPI"})`. If the connection's `is_stale` is true, do not attempt to post — tell Pat the Facebook Pages connection needs reconnecting (share the `reconnect_url`) and stop.
-
-The Page itself is a dynamic enum on the action, not a fixed ID — resolve it fresh each run with:
-```
-inspect_zapier_actions({tool_name: "facebook_pages_create_page_post", enum_property: "page"})
-```
-As of the last run there was a single connected Page, "Travelling Seniors" (id 1265889076608766). If more than one Page ever shows up, ask Pat which one to use rather than guessing.
+There's no dynamic Page selection with this connector — it's scoped to one Page per connection. If `get_page_info` ever returns a different Page than expected, stop and confirm with Pat before posting.
 
 ## Step 1 — Find the live article
 
 You need two things from the published post: its live URL and its hero image.
 
 - **Live URL**: read `astro.config.mjs` from the repo for the `site` field (currently `https://travellingseniors.com.au`), and note the routing pattern from `src/pages/news/[slug].astro` — articles live at `<site>/news/<slug>/`. Combine the site's base URL with the slug of the file just committed.
-- **Hero image**: the `image.url` field in that post's frontmatter. Use the same image already verified and used as the post's featured image — don't source a new one.
+- **Hero image**: the `image.url` field in that post's frontmatter. Use the same image already verified and used as the post's featured image — don't source a new one. With this connector, a link post's preview image is pulled automatically by Facebook from the article page's Open Graph tags, not attached manually — so this is mainly for your own reference and for the fallback in Step 4.
 
 Also pull the post's `title` and `description` from frontmatter as raw material for the caption, but don't copy them verbatim — Facebook copy should sound like a Facebook post, not a headline.
 
@@ -37,21 +33,27 @@ Don't invent claims that aren't in the article. Don't use hashtags unless a look
 
 ## Step 4 — Post it
 
+Standard case — a link post, with Facebook auto-generating the preview card (including image) from the article page's Open Graph tags:
+
 ```
-execute_zapier_write_action({
-  selected_api: "FacebookV2CLIAPI",
-  action: "page_stream",
-  tool_name: "facebook_pages_create_page_post",
-  params: {
-    page: "<resolved page id from Prerequisites>",
-    message: "<drafted caption, including the Read it here: <url> line>",
-    link_url: "<live article URL>",
-    source: ["<hero image URL>"]
-  }
+create_post({
+  message: "<drafted caption, including the Read it here: <url> line>",
+  link: "<live article URL>"
 })
 ```
 
-`source` takes a list of publicly accessible image URLs (or uploaded files) — pass the hero image URL directly, no need to download and re-upload it.
+To publish at a specific time instead of immediately, add `scheduled_at` (ISO 8601, must be 10 minutes to 30 days out).
+
+Fallback — if the link preview doesn't pick up the right image (spot-check the result, or ask Pat to check), a photo post can be used instead, though note this loses the clickable link card and puts the URL only in the caption text:
+
+```
+create_photo_post({
+  url: "<hero image URL>",
+  caption: "<drafted caption, including the Read it here: <url> line>"
+})
+```
+
+Prefer `create_post` (the link-post form) unless there's a specific reason to fall back.
 
 ## Step 5 — Confirm
 
