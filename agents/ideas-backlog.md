@@ -20,7 +20,7 @@
 | Travel Tips | The Over-60's Guide to Travel Apps | Boarding passes, translation and offline maps made simple for less tech-confident travellers | proposed | 2026-09-02 |
 | Budget & Deals | The $2.50 Fare Most Retirees Don't Know About | NSW and QLD Country Pensioner Excursion concession fares on regional rail | proposed | 2026-09-02 |
 | Budget & Deals | Making Frequent Flyer Points Work Harder in Retirement | Classic Rewards seat releases, status credit runs and points expiry traps | proposed | 2026-09-02 |
-| Destinations | Western Australia's Spring Wildflower Season by Road | A Perth-based self-drive loop timed for the Aug-Oct superbloom, AUD costs and drive times, before it fades for the year | approved | 2026-09-07 |
+| Destinations | Western Australia's Spring Wildflower Season by Road | A Perth-based self-drive loop timed for the Aug-Oct superbloom, AUD costs and drive times, before it fades for the year | published (https://github.com/jenxgit/travelling-seniors-blog/commit/c66c0ed8cbe2196e1458b7e92e203842bc6f0fa8) | 2026-09-07 |
 | Destinations | Sri Lanka After the Crowds | Tea country, temples and slow trains for first-time senior visitors, riding the 2026 boomer travel trend toward Sri Lanka | proposed | 2026-09-07 |
 | Cruises & Rail | Norway and Iceland by Ship: Sailing the Midnight Sun in Our Winter | Why the Australian winter (Jun-Aug) is fjord cruising's peak season, 20-hour daylight, AUD pricing and booking windows | proposed | 2026-09-07 |
 | Cruises & Rail | Sailing the Nile in the Age of the Grand Egyptian Museum | Why the museum's 2026 opening makes this the year for a senior-friendly Nile river cruise, accessibility notes | approved | 2026-09-07 |
