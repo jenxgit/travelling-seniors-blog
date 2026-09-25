@@ -1,0 +1,336 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Fetch all news stories to match each persona's recent dispatches
+const allNews = await getCollection('news');
+
+const teamMembers = [
+  {
+    name: 'Sofia Mendez',
+    role: 'European & Australian Destinations Correspondent',
+    byline: 'Slow down, talk to the locals, and always take the scenic route.',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&h=400&q=80',
+    location: 'Perth & Melbourne, Australia',
+    specialties: ['Regional Australia Road Trips', 'European Villages', 'Seasonal Superblooms', 'Slow Travel'],
+    bio: 'A veteran travel journalist with over 25 years exploring regional Australia, Europe, and the Pacific. Sofia specializes in self-drive road trips, unhurried heritage towns, and uncovering places where culture and nature meet away from the coach crowds.',
+    categorySlug: 'destinations',
+    categoryName: 'Destinations',
+  },
+  {
+    name: 'Eleanor Vance',
+    role: 'Senior Rail & Cruise Specialist',
+    byline: 'The journey isn’t something to endure—it’s the reason we travel.',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&h=400&q=80',
+    location: 'Sydney, Australia & Zurich, Switzerland',
+    specialties: ['Scenic Alpine Railways', 'European River Cruising', 'Trans-Continental Trains', 'Small-Ship Expeditions'],
+    bio: 'Passionate about track-and-tide adventures, Eleanor has crossed the Nullarbor on the Indian Pacific, navigated the Rhine and Danube, and ridden panoramic alpine railways. She demystifies cabin classes, effortless transfers, and leisurely rail passes.',
+    categorySlug: 'cruises-rail',
+    categoryName: 'Cruises & Rail',
+  },
+  {
+    name: 'Kenji Sato',
+    role: 'Wellness & Mobility Columnist',
+    byline: 'Staying active on the road is the true secret to travelling for life.',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&h=400&q=80',
+    location: 'Brisbane, Australia & Kyoto, Japan',
+    specialties: ['In-Flight Circulation & Mobility', 'Joint-Friendly Walking Trails', 'Thermal Springs & Onsens', 'Active Longevity'],
+    bio: 'With a background in physical therapy and a love for gentle nature walks, Kenji develops practical in-seat airplane exercise routines, advice on managing joints during long touring days, and soothing thermal wellness escapes across the globe.',
+    categorySlug: 'health-wellness',
+    categoryName: 'Health & Wellness',
+  },
+  {
+    name: 'Dr. Arthur Campbell',
+    role: 'Travel Logistics & Practical Advice Columnist',
+    byline: 'Good preparation turns travel apprehension into pure confidence.',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=400&q=80',
+    location: 'Adelaide, Australia',
+    specialties: ['Travel Insurance Over 60', 'Seniors Card Overseas Reciprocity', 'Medication Customs Transit', 'Lightweight 2-Bag Packing'],
+    bio: 'A retired educator and lifelong independent traveler, Arthur breaks down the complex fine print of travel insurance pre-existing conditions, international customs documentation for prescription drugs, and bulletproof packing systems.',
+    categorySlug: 'travel-tips',
+    categoryName: 'Travel Tips',
+  },
+  {
+    name: 'Marcus Sterling',
+    role: 'Budget & Travel Finance Analyst',
+    byline: 'Retirement travel is about maximising freedom, not overpaying for flash.',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400&q=80',
+    location: 'Sunshine Coast, Australia',
+    specialties: ['Off-Peak Airline Fare Cycles', 'Long-Stay Rental Economics', 'Aussie Dollar Timing', 'Points & Loyalty Optimization'],
+    bio: 'Marcus brings decades in personal financial analysis to retirement wanderlust. He monitors airline flash sales, currency exchange trends, long-stay holiday apartments, and strategies for retirees to stretch their travel savings further.',
+    categorySlug: 'budget-deals',
+    categoryName: 'Budget & Deals',
+  },
+];
+
+// Helper to count articles per author
+const getAuthorArticles = (authorName: string) => {
+  return allNews.filter((art) => art.data.author?.name === authorName);
+};
+---
+
+<BaseLayout
+  title="About Our Team & Journal"
+  description="Meet the passionate team of travel writers, wellness experts, and logistics columnists behind TravellingSenior."
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-16 lg:space-y-24">
+    
+    <!-- Hero Header -->
+    <header class="relative rounded-3xl p-8 sm:p-14 lg:p-18 overflow-hidden bg-gradient-to-br from-navy-950 via-slate-900 to-navy-900 text-white border border-white/10 shadow-2xl space-y-6">
+      <div class="absolute right-0 top-0 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute left-1/3 -bottom-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-3xl space-y-5">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-500/20 text-brand-300 border border-brand-500/30 backdrop-blur-sm">
+          <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+          About TravellingSenior
+        </div>
+        
+        <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+          Empowering curious, ageless explorers to travel smarter, comfortably, and further.
+        </h1>
+
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+          We are an independent digital publication dedicated to Australian retirees, empty-nesters, and mature adventurers. We celebrate the luxury of unhurried time, offering thoroughly researched guides, health-conscious itineraries, and practical money-saving strategies.
+        </p>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="relative z-10 grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-white/10 text-center sm:text-left">
+        <div class="space-y-1">
+          <span class="font-serif text-3xl sm:text-4xl font-bold text-brand-400">28k+</span>
+          <p class="text-xs text-slate-300">Weekly Newsletter Readers</p>
+        </div>
+        <div class="space-y-1">
+          <span class="font-serif text-3xl sm:text-4xl font-bold text-amber-400">100%</span>
+          <p class="text-xs text-slate-300">Independent Editorial</p>
+        </div>
+        <div class="space-y-1">
+          <span class="font-serif text-3xl sm:text-4xl font-bold text-emerald-400">5</span>
+          <p class="text-xs text-slate-300">Dedicated Category Specialists</p>
+        </div>
+        <div class="space-y-1">
+          <span class="font-serif text-3xl sm:text-4xl font-bold text-sky-400">60+</span>
+          <p class="text-xs text-slate-300">Curated Guides & Itineraries</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mission & Core Values -->
+    <section class="space-y-8">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">
+          Our Editorial Philosophy
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
+          Why TravellingSenior is Different
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400">
+          We don't publish rushed listicles or unrealistic 10-country-in-10-days itineraries. Our work is built on four core pillars:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="glass-panel p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 space-y-3 hover:shadow-lg transition-shadow">
+          <div class="w-10 h-10 rounded-xl bg-brand-100 dark:bg-brand-950/60 text-brand-600 dark:text-brand-400 flex items-center justify-center font-bold">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-slate-900 dark:text-white">Pacing & Comfort</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Travel should rejuvenate, not exhaust. We design manageable daily paces with plenty of time for leisurely cafes, restful afternoons, and scenic walks.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 space-y-3 hover:shadow-lg transition-shadow">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-slate-900 dark:text-white">Health & Mobility</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            From managing prescriptions across borders to in-flight circulation routines and joint-conscious trail reviews, wellness is front and center.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 space-y-3 hover:shadow-lg transition-shadow">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-slate-900 dark:text-white">Concession Savvy</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            We help you maximize Seniors Card discounts, off-peak airfare windows, and long-stay accommodations to get 5-star value on sensible budgets.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 space-y-3 hover:shadow-lg transition-shadow">
+          <div class="w-10 h-10 rounded-xl bg-sky-100 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 flex items-center justify-center font-bold">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+            </svg>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-slate-900 dark:text-white">Firsthand Honesty</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Our columnists share authentic experiences — including the steep stairs, cobblestone realities, and hidden costs tour brochures leave out.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Meet Our Team / Personas Section -->
+    <section class="space-y-12">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-6">
+        <div class="space-y-2">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">
+            Our Voices & Specialists
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
+            Meet the Editorial Team
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xl">
+            Each of our columnists brings deep domain experience and firsthand insight to their respective travel beat.
+          </p>
+        </div>
+        <div class="hidden sm:block text-right">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+            5 Senior Columnists
+          </span>
+        </div>
+      </div>
+
+      <!-- Team Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {teamMembers.map((member) => {
+          const authorArticles = getAuthorArticles(member.name);
+          return (
+            <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-6">
+              
+              <div class="space-y-6">
+                <!-- Profile Header -->
+                <div class="flex items-start gap-4 sm:gap-6">
+                  <div class="relative flex-shrink-0">
+                    <img
+                      src={member.avatar}
+                      alt={member.name}
+                      class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover ring-2 ring-brand-500/30 shadow-md"
+                      loading="lazy"
+                    />
+                    <div class="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center text-[10px] font-bold shadow-sm" title="Verified Columnist">
+                      ✓
+                    </div>
+                  </div>
+
+                  <div class="space-y-1.5 flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-2">
+                      <h3 class="font-serif text-xl sm:text-2xl font-bold text-slate-900 dark:text-white truncate">
+                        {member.name}
+                      </h3>
+                      <a
+                        href={`/category/${member.categorySlug}`}
+                        class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg bg-brand-50 dark:bg-brand-950/60 text-brand-600 dark:text-brand-400 hover:bg-brand-100 transition-colors whitespace-nowrap"
+                      >
+                        {member.categoryName}
+                      </a>
+                    </div>
+
+                    <p class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400">
+                      {member.role}
+                    </p>
+
+                    <p class="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                      <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span>{member.location}</span>
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Byline Quote Callout -->
+                <blockquote class="p-3.5 rounded-xl bg-slate-100/80 dark:bg-slate-900/80 border-l-4 border-brand-500 text-xs sm:text-sm italic text-slate-700 dark:text-slate-300">
+                  “{member.byline}”
+                </blockquote>
+
+                <!-- Bio -->
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  {member.bio}
+                </p>
+
+                <!-- Specialties Tags -->
+                <div class="space-y-2">
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                    Key Areas of Focus
+                  </span>
+                  <div class="flex flex-wrap gap-1.5">
+                    {member.specialties.map((spec) => (
+                      <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                        {spec}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Footer with recent articles link -->
+              <div class="pt-4 border-t border-slate-200/80 dark:border-slate-800/80 flex items-center justify-between text-xs">
+                <span class="text-slate-500 dark:text-slate-400">
+                  {authorArticles.length} published guide{authorArticles.length === 1 ? '' : 's'}
+                </span>
+                <a
+                  href={`/category/${member.categorySlug}`}
+                  class="inline-flex items-center gap-1 font-bold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors"
+                >
+                  <span>Explore stories by {member.name.split(' ')[0]}</span>
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Editorial Standards & Trust Box -->
+    <section class="rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-slate-900 via-navy-950 to-slate-900 text-white relative overflow-hidden border border-white/10 shadow-xl space-y-6">
+      <div class="relative z-10 max-w-3xl space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">
+          Our Editorial Code
+        </span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold">
+          Honest, Independent & Reader-Supported
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          TravellingSenior operates with complete editorial autonomy. We never accept sponsored product placements that compromise our recommendations, and any affiliate commissions earned from hotel bookings or tour passes are reinvested directly into producing thorough, unbiased journalism.
+        </p>
+        <div class="pt-2 flex flex-wrap gap-4">
+          <a
+            href="/"
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-brand-500 hover:bg-brand-600 text-white shadow-md transition-colors"
+          >
+            <span>Read Our Latest Guides</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a
+            href="/privacy"
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white/10 hover:bg-white/20 text-white border border-white/10 transition-colors"
+          >
+            Privacy & Disclosure Policy
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>
