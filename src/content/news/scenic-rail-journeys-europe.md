@@ -3,7 +3,7 @@ title: "The Top 5 Scenic European Rail Journeys for Stress-Free Senior Travel"
 description: "Discover the continent's most breathtaking panoramas with seamless comfort, spacious panoramic carriages, and zero airport stress."
 pubDate: 2026-08-14
 category: "Cruises & Rail"
-featured: true
+featured: false
 readingTime: "6 min read"
 author:
   name: "Eleanor Vance"

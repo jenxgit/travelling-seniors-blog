@@ -3,7 +3,7 @@ title: "Staying Active on a Long-Haul Flight: A Physiotherapist's Simple In-Seat
 description: "Kenji Sato shares a physiotherapist-designed routine of gentle in-seat movements to keep circulation flowing and stiffness at bay on the long haul from Australia to Europe, Asia and beyond."
 pubDate: 2026-09-09
 category: "Health & Wellness"
-featured: false
+featured: true
 readingTime: "5 min read"
 author:
   name: "Kenji Sato"

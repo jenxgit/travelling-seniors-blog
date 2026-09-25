@@ -33,6 +33,16 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://travelli
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
 
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-W1S0R306JE"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W1S0R306JE');
+    </script>
+
     <!-- Primary Meta Tags -->
     <title>{title} | TravellingSenior</title>
     <meta name="title" content={`${title} | TravellingSenior`} />
