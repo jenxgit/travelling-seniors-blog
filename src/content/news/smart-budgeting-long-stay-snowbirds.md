@@ -18,7 +18,7 @@ tags: ["Budget", "Snowbirds", "Long-Stay", "Travel Tips", "Finance", "Winter Sun
 
 Escaping harsh winter frosts no longer requires owning a second vacation home. Today's nomadic retirees are adopting "slow travel" strategies, renting fully furnished apartments for one to three months at a time across sunny global destinations.
 
-By shifting from short-term hotel bookings to monthly residential stays, mature travelers can reduce daily lodging costs by up to **60%** while gaining authentic local neighborhood experiences.
+By shifting from short-term hotel bookings to monthly residential stays, mature travellers can reduce daily lodging costs by up to **60%** while gaining authentic local neighbourhood experiences.
 
 ## The Top Affordable Long-Stay Havens
 
@@ -29,11 +29,11 @@ Towns like Nerja, Fuengirola, and Alicante offer exceptional off-season monthly 
 For adventurous retirees seeking tropical warmth and world-renowned street food, Malaysia offers high standards of English fluency, world-class private medical clinics, and generous 90-day visa-free tourist entry for many Western passport holders.
 
 ### 3. Mazatlán & Lake Chapala (Mexico)
-Long favored by North American snowbirds, these destinations offer established expatriate community networks, mild mountain or coastal breezes, and low everyday living expenses.
+Long favoured by North American snowbirds, these destinations offer established expatriate community networks, mild mountain or coastal breezes, and low everyday living expenses.
 
 ---
 
-## Strategic Tips to Maximize Your Savings
+## Strategic Tips to Maximise Your Savings
 
 1. **Book Direct for Stays Over 28 Days:** Platforms like Airbnb and Vrbo offer built-in discounts (often 30% to 50%) for stays exceeding 28 days. You can also contact reputable local property managers in advance for even better rates.
 2. **Watch the Schengen 90/180-Day Clock:** Non-EU citizens must strictly monitor their 90-day limit within any rolling 180-day window in the Schengen Zone. Split your European winter between Schengen countries (e.g. Spain, Greece) and non-Schengen sunny spots (e.g. Cyprus, Montenegro, or Morocco).

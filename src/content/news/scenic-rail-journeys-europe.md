@@ -24,7 +24,7 @@ From the snow-crowned peaks of the Swiss Alps to the sun-drenched vineyards of t
 
 Often crowned the world's slowest express train, the **Glacier Express** takes approximately eight hours to traverse 291 bridges, 91 tunnels, and the 2,044-metre-high Oberalp Pass. 
 
-What makes this journey especially rewarding for senior travelers is the level of hospitality. Floor-to-ceiling panoramic glass windows ensure uninterrupted viewing of dramatic ravines and glacial valleys, while three-course meals paired with regional Swiss wines are served directly to your comfortable seat.
+What makes this journey especially rewarding for senior travellers is the level of hospitality. Floor-to-ceiling panoramic glass windows ensure uninterrupted viewing of dramatic ravines and glacial valleys, while three-course meals paired with regional Swiss wines are served directly to your comfortable seat.
 
 > "Rail travel invites you to experience time not as something to be beaten, but as a scenery to be savoured."
 
@@ -44,7 +44,7 @@ In the summer and autumn months, you can also opt for the **Jacobite Steam Train
 
 ## 3. The Douro Historical Line: Porto to Pocinho (Portugal)
 
-Winding alongside the tranquil waters of the Douro River, this route carves through the UNESCO-listed terraced vineyards where Port wine has been harvested for centuries. The gentle pace allows travelers to admire quaint riverside quintas, stone village chapels, and azulejo-tiled stations.
+Winding alongside the tranquil waters of the Douro River, this route carves through the UNESCO-listed terraced vineyards where Port wine has been harvested for centuries. The gentle pace allows travellers to admire quaint riverside quintas, stone village chapels, and azulejo-tiled stations.
 
 ### Why Seniors Love This Route:
 - Very mild Mediterranean climate through spring and autumn.
@@ -55,7 +55,7 @@ Winding alongside the tranquil waters of the Douro River, this route carves thro
 
 ## 4. The Bergen Railway & Flåm Line (Norway)
 
-Connecting Oslo to Bergen across Europe's highest mountainous plateau, the Hardangervidda, this route offers one of the most starkly beautiful journeys on the planet. At Myrdal, travelers can transfer to the legendary **Flåm Railway**, which descends 866 metres through cascading waterfalls and sheer fjord cliffs to the edge of Aurlandsfjord.
+Connecting Oslo to Bergen across Europe's highest mountainous plateau, the Hardangervidda, this route offers one of the most starkly beautiful journeys on the planet. At Myrdal, travellers can transfer to the legendary **Flåm Railway**, which descends 866 metres through cascading waterfalls and sheer fjord cliffs to the edge of Aurlandsfjord.
 
 Modern Norwegian trains are fully step-free, equipped with wide doors, level boarding platforms, and priority assistance.
 
@@ -63,10 +63,10 @@ Modern Norwegian trains are fully step-free, equipped with wide doors, level boa
 
 ## 5. The Black Forest Railway: Offenburg to Singen (Germany)
 
-Constructed between 1863 and 1873, the *Schwarzwaldbahn* is a masterpiece of mountain railway engineering. The route climbs through dense evergreen forests, castle ruins, and traditional cuckoo-clock villages using a series of double loops that minimize steep gradients for an exceptionally smooth ride.
+Constructed between 1863 and 1873, the *Schwarzwaldbahn* is a masterpiece of mountain railway engineering. The route climbs through dense evergreen forests, castle ruins, and traditional cuckoo-clock villages using a series of double loops that minimise steep gradients for an exceptionally smooth ride.
 
 ### Planning Your Journey
 When booking European rail tickets, always inquire about:
-1. **Senior Eurail Passes:** Available for travelers aged 60 and over, offering up to 10% discount on global passes.
+1. **Senior Eurail Passes:** Available for travellers aged 60 and over, offering up to 10% discount on global passes.
 2. **First Class Upgrades:** Often costing just a modest surcharge, First Class provides extra legroom, quieter carriages, and dedicated power outlets.
 3. **Platform Assistance:** Every major European operator provides complimentary special assistance for seniors requesting wheelchair access or porter support.

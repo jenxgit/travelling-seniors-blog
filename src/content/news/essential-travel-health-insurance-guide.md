@@ -31,7 +31,7 @@ Never travel internationally with less than **$250,000 to $500,000 USD** in prim
 Medical evacuation cover should ideally be at least **$500,000 to $1,000,000 USD**. This covers emergency helicopter transport from remote cruise destinations, air ambulances with onboard intensive care teams, and safe return to your home hospital.
 
 ### 3. Pre-Existing Condition Waivers
-The most common reason for claim denials among mature travelers is failure to properly qualify for a *Pre-Existing Medical Condition Exclusion Waiver*. 
+The most common reason for claim denials among mature travellers is failure to properly qualify for a *Pre-Existing Medical Condition Exclusion Waiver*. 
 
 > **Important Rule:** Most insurers require you to purchase the policy within 14 to 21 days of making your initial trip deposit to qualify for a pre-existing condition waiver.
 
@@ -45,4 +45,4 @@ The most common reason for claim denials among mature travelers is failure to pr
 - **Adventure Activity Limitations:** Gentle hikes, kayaking, or hot-air ballooning may require supplementary adventure sports endorsements.
 
 ## Top Recommendations for Mature Explorers
-Before you buy, compare quotes across specialized senior brokers, maintain digital copies of your prescription names and dosages, and keep emergency international assistance phone numbers saved in your mobile contacts.
+Before you buy, compare quotes across specialised senior brokers, maintain digital copies of your prescription names and dosages, and keep emergency international assistance phone numbers saved in your mobile contacts.

@@ -10,7 +10,7 @@ interface Props {
 
 const { currentArticleId, category, allArticles } = Astro.props;
 
-// Filter out current article and prioritize same category
+// Filter out current article and prioritise same category
 const otherArticles = allArticles.filter((art) => art.id !== currentArticleId);
 const sameCategory = otherArticles.filter((art) => art.data.category === category);
 const differentCategory = otherArticles.filter((art) => art.data.category !== category);
