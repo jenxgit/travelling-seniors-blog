@@ -1,14 +1,14 @@
 ---
 title: "Choosing the Right Small-Group Tour Operator After 60: What to Ask Before You Book"
-description: "Dr. Arthur Campbell sets out the questions about pace, group size, single supplements and cancellation policies that separate a well-run small-group tour from an expensive lesson in fine print."
+description: "Frank Delaney sets out the questions about pace, group size, single supplements and cancellation policies that separate a well-run small-group tour from an expensive lesson in fine print."
 pubDate: 2026-09-25
 category: "Travel Tips"
 featured: false
 readingTime: "7 min read"
 author:
-  name: "Dr. Arthur Campbell"
-  role: "Travel Tips Columnist"
-  avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Frank Delaney"
+  role: "Travel Tips Correspondent"
+  avatar: "/images/authors/frank-delaney.jpg"
 image:
   url: "https://images.unsplash.com/photo-1766415007432-80738e830722?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "A small group of travellers gathered around a tour guide beside a pond, listening to a briefing"
@@ -86,4 +86,4 @@ None of these questions are confrontational, whatever the tone of the letters I 
 
 "Small group," "easy pace" and "flexible cancellation" are marketing phrases until you convert them into numbers — a maximum headcount, a distance in kilometres, a dollar figure, a percentage on a specific date. Get those seven answers in writing before you book, and the operator who gives them to you plainly and promptly is very probably the one who will look after you properly once you're actually on the road.
 
-Safe travels and sharp paperwork, — Dr. Arthur Campbell
+Safe travels and sharp paperwork, — Frank Delaney

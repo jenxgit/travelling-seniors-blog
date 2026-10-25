@@ -6,9 +6,9 @@ category: "Cruises & Rail"
 featured: false
 readingTime: "7 min read"
 author:
-  name: "Eleanor Vance"
-  role: "Senior Train Travel Specialist"
-  avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Hugo Ashby"
+  role: "Cruises & Rail Correspondent"
+  avatar: "/images/authors/hugo-ashby.jpg"
 image:
   url: "https://images.unsplash.com/photo-1599640842225-85d111c60e6b?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "A large white ocean cruise ship sailing across calm open water under a clear sky"
@@ -66,4 +66,4 @@ For river cruising in Europe, the high season runs June through August — which
 
 Neither is the more sophisticated choice — only the better fit for a particular traveller, at a particular stage. I have loved both, for entirely different reasons, and I suspect you will too, once you know which questions to ask before you sign the booking form.
 
-Bon voyage, — Eleanor
+Bon voyage, — Hugo

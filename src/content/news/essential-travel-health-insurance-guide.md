@@ -6,9 +6,9 @@ category: "Travel Tips"
 featured: false
 readingTime: "5 min read"
 author:
-  name: "Dr. Arthur Campbell"
-  role: "Health & Travel Policy Analyst"
-  avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Frank Delaney"
+  role: "Travel Tips Correspondent"
+  avatar: "/images/authors/frank-delaney.jpg"
 image:
   url: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "Person reviewing travel documents, passport, and medical records with a pen"

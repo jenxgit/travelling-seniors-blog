@@ -1,14 +1,14 @@
 ---
 title: "The Seniors Card Checklist for Overseas Trips: Which Discounts Actually Travel With You"
-description: "Dr. Arthur Campbell sorts fact from wishful thinking on what your Seniors Card, Pensioner Concession Card, and Commonwealth Seniors Health Card actually do once you leave Australian soil."
+description: "Frank Delaney sorts fact from wishful thinking on what your Seniors Card, Pensioner Concession Card, and Commonwealth Seniors Health Card actually do once you leave Australian soil."
 pubDate: 2026-08-28
 category: "Travel Tips"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Dr. Arthur Campbell"
-  role: "Travel Tips Columnist"
-  avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Frank Delaney"
+  role: "Travel Tips Correspondent"
+  avatar: "/images/authors/frank-delaney.jpg"
 image:
   url: "https://images.unsplash.com/photo-1586441133374-ed1cb4007a47?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "Passport and boarding pass resting on top of a packed travel bag"
@@ -64,4 +64,4 @@ None of this means overseas travel is a discount desert for Australian seniors �
 
 Your Seniors Card will get you a cheaper session at the local cinema and a discount at the hardware store. It will not get you a discounted gondola ride in Venice, a reduced safari fee in Kenya, or a cut-price ticket on the Shinkansen. For that, your most valuable piece of identification is the one you're already required to carry: your passport, with its date of birth printed plainly on page one. Pack that carefully, along with proper insurance and a little research into what your specific destination actually offers, and you'll do considerably better than the reader with the strongly worded letter to Rome.
 
-Safe travels and sharp paperwork, — Dr. Arthur Campbell
+Safe travels and sharp paperwork, — Frank Delaney

@@ -6,9 +6,9 @@ category: "Health & Wellness"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Kenji Sato"
-  role: "East Asian Culture & Wellness Writer"
-  avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Maya Okafor"
+  role: "Health & Wellness Correspondent"
+  avatar: "/images/authors/maya-okafor.jpg"
 image:
   url: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "Tranquil outdoor Japanese hot spring bath surrounded by lush bamboo and misty mountains"

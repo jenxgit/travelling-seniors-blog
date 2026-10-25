@@ -1,14 +1,14 @@
 ---
 title: "Walking Holidays for Joint Health: Gentle Trails Across Australia and New Zealand"
-description: "Kenji Sato explores how well-chosen, unhurried walking trails across Australia and New Zealand can ease joint stiffness and lift the spirit, with a physiotherapist's cautions built in."
+description: "Maya Okafor explores how well-chosen, unhurried walking trails across Australia and New Zealand can ease joint stiffness and lift the spirit, with a physiotherapist's cautions built in."
 pubDate: 2026-08-26
 category: "Health & Wellness"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Kenji Sato"
-  role: "Wellness & Mobility Writer"
-  avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Maya Okafor"
+  role: "Health & Wellness Correspondent"
+  avatar: "/images/authors/maya-okafor.jpg"
 image:
   url: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "Two senior walkers with trekking poles making their way along a sunlit wooded trail"
@@ -50,4 +50,4 @@ The most contented walking holidays I have observed are the ones where the walki
 
 Walking, done gently and with the right trail underfoot, asks very little of us and offers a great deal in return: a settled mind, a body that remembers how to move, and a country seen at exactly the pace it deserves to be seen.
 
-Travel gently, — Kenji
+Travel gently, — Maya

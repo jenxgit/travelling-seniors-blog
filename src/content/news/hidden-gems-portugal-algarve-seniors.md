@@ -6,9 +6,9 @@ category: "Destinations"
 featured: false
 readingTime: "7 min read"
 author:
-  name: "Sofia Mendez"
-  role: "European Destination Correspondent"
-  avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Wren Callaway"
+  role: "Destinations Correspondent"
+  avatar: "/images/authors/wren-callaway.jpg"
 image:
   url: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "Sunny coastal cliffs and golden sand beaches in Algarve, Portugal"

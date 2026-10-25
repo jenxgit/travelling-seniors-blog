@@ -6,9 +6,9 @@ category: "Budget & Deals"
 featured: false
 readingTime: "5 min read"
 author:
-  name: "Marcus Sterling"
-  role: "Financial & Travel Columnist"
-  avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Rosie Tran"
+  role: "Budget & Deals Correspondent"
+  avatar: "/images/authors/rosie-tran.jpg"
 image:
   url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "Tropical turquoise sea and pristine white sand beach under palm trees"

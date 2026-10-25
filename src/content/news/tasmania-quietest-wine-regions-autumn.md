@@ -1,14 +1,14 @@
 ---
 title: "Tasmania's Quietest Wine Regions: An Autumn Escape from the Crowds"
-description: "Sofia Mendez tours the lesser-known corners of Tasmania's wine country in autumn, when the vines turn gold, the cellar doors empty out, and the island's quietest valleys reward a slower kind of visit."
+description: "Wren Callaway tours the lesser-known corners of Tasmania's wine country in autumn, when the vines turn gold, the cellar doors empty out, and the island's quietest valleys reward a slower kind of visit."
 pubDate: 2026-09-07
 category: "Destinations"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Sofia Mendez"
+  name: "Wren Callaway"
   role: "Destinations Correspondent"
-  avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=80"
+  avatar: "/images/authors/wren-callaway.jpg"
 image:
   url: "https://images.unsplash.com/photo-1761228634620-ff57e9d11d2d?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "Rolling vineyard rows on a gentle hillside touched with gold and rust autumn colour under a soft grey sky"
@@ -50,4 +50,4 @@ Hobart makes the better base if your time is limited, putting the Coal River, De
 
 Book restaurants attached to wineries ahead, even on a weekday — several of the best, particularly in the Coal River and Tamar Valleys, seat only twenty or thirty covers and fill from Hobart and Launceston locals alone. Carry cash in small denominations for the smallest family-run doors, some of which still prefer it. And do not schedule more than three or four tastings in a day; the pleasure of these valleys is in the pauses between them, not in ticking off every winery on the map.
 
-Until the next slow morning somewhere new, — Sofia
+Until the next slow morning somewhere new, — Wren

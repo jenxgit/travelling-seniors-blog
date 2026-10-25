@@ -1,14 +1,14 @@
 ---
 title: "Western Australia's Spring Wildflower Season: A Perth-Based Self-Drive Loop"
-description: "Sofia Mendez maps a self-drive loop out of Perth for the tail end of Western Australia's superbloom — where the everlastings are still carpeting the Wildflower Way, what it costs, how long to allow, and what to do if you've left it a little late."
+description: "Wren Callaway maps a self-drive loop out of Perth for the tail end of Western Australia's superbloom — where the everlastings are still carpeting the Wildflower Way, what it costs, how long to allow, and what to do if you've left it a little late."
 pubDate: 2026-09-23
 category: "Destinations"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Sofia Mendez"
+  name: "Wren Callaway"
   role: "Destinations Correspondent"
-  avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=80"
+  avatar: "/images/authors/wren-callaway.jpg"
 image:
   url: "https://images.unsplash.com/photo-1677704557027-554b622ca23e?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "A meadow of purple and pink wildflowers stretching to the horizon under a clear blue sky"
@@ -60,4 +60,4 @@ As a rough guide for future years: the far north opens the season from around Ju
 
 A wide-brimmed hat and proper sun protection, since much of this driving happens under open sky with very little shade at the stops themselves. A full tank before you leave the last town of any size, and a paper map to go with the phone. Sturdy, closed shoes rather than sandals for walking the trails at Coalseam or into the Stirling Range, where the ground is uneven and the best flowers are rarely right beside the car park. And, as always in a national park, eyes only — it is illegal to pick Western Australia's wildflowers under the Biodiversity Conservation Act, and the ones left growing are the ones the next carful of travellers gets to pull over for as well.
 
-Until the next slow morning somewhere new, — Sofia
+Until the next slow morning somewhere new, — Wren

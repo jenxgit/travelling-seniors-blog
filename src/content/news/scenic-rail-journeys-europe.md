@@ -6,9 +6,9 @@ category: "Cruises & Rail"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Eleanor Vance"
-  role: "Senior Train Travel Specialist"
-  avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Hugo Ashby"
+  role: "Cruises & Rail Correspondent"
+  avatar: "/images/authors/hugo-ashby.jpg"
 image:
   url: "https://images.unsplash.com/photo-1635453424231-14b3c84584fb?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "Red panoramic train travelling through snow-covered mountains in the Swiss Alps near St. Moritz"

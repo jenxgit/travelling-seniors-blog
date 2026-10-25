@@ -6,9 +6,9 @@ category: "Cruises & Rail"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Eleanor Vance"
-  role: "Senior Train Travel Specialist"
-  avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Hugo Ashby"
+  role: "Cruises & Rail Correspondent"
+  avatar: "/images/authors/hugo-ashby.jpg"
 image:
   url: "https://images.unsplash.com/photo-1681663112883-f6138ca162c1?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "Railway tracks stretching to a flat horizon across an arid, treeless desert landscape"
@@ -69,4 +69,4 @@ The Indian Pacific crosses more climate zones than most Australian journeys mana
 
 Few journeys reward patience quite like this one. By the time the Swan River comes into view, you will have crossed a continent slowly enough to remember every part of it.
 
-Bon voyage, — Eleanor
+Bon voyage, — Hugo

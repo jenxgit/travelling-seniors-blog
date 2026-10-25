@@ -1,14 +1,14 @@
 ---
 title: "Staying Active on a Long-Haul Flight: A Physiotherapist's Simple In-Seat Routine"
-description: "Kenji Sato shares a physiotherapist-designed routine of gentle in-seat movements to keep circulation flowing and stiffness at bay on the long haul from Australia to Europe, Asia and beyond."
+description: "Maya Okafor shares a physiotherapist-designed routine of gentle in-seat movements to keep circulation flowing and stiffness at bay on the long haul from Australia to Europe, Asia and beyond."
 pubDate: 2026-09-09
 category: "Health & Wellness"
 featured: true
 readingTime: "5 min read"
 author:
-  name: "Kenji Sato"
-  role: "Wellness & Mobility Writer"
-  avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Maya Okafor"
+  role: "Health & Wellness Correspondent"
+  avatar: "/images/authors/maya-okafor.jpg"
 image:
   url: "https://images.unsplash.com/photo-1731952161718-d645308c05bf?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "The interior of an aircraft cabin during a long-haul flight, with rows of seats lit by warm overhead lighting"
@@ -52,4 +52,4 @@ Many of my fellow travellers swear by graduated compression socks for long secto
 
 None of this is complicated, and none of it demands much of you beyond a little intention every hour or two. A cabin full of people sitting still is, in its way, an invitation — to be the one person quietly working through ankle circles, glass of water in hand, arriving rather better than most.
 
-Travel gently, — Kenji
+Travel gently, — Maya

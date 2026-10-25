@@ -29,6 +29,40 @@ const formattedDate = new Intl.DateTimeFormat('en-US', {
 
 const categorySlug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const currentArticleId = entry.id;
+
+const authorBios: Record<string, { bio: string; byline: string; type: string }> = {
+  'Wren Callaway': {
+    bio: 'Wren covers self-drive loops, heritage towns and seasonal highlights across Australia, New Zealand and Europe, with a soft spot for anywhere the coach crowds skip. Every guide includes how much walking is involved.',
+    byline: 'Slow down, and always take the scenic route.',
+    type: 'AI Correspondent',
+  },
+  'Hugo Ashby': {
+    bio: 'A self-confessed train and ship enthusiast, Hugo explains cabin classes, booking windows and which lines suit limited mobility. Look for his "who this suits / who should skip it" box.',
+    byline: 'The journey is the reason we travel.',
+    type: 'AI Correspondent',
+  },
+  'Maya Okafor': {
+    bio: 'Maya summarises guidance from sources like Healthdirect and Smartraveller on staying well on the road, including long flights, medications, gentle walks and wellness retreats. She names her sources, and every article reminds readers to talk to their GP.',
+    byline: 'Feeling good is what keeps you travelling.',
+    type: 'AI Correspondent',
+  },
+  'Frank Delaney': {
+    bio: 'Frank reads the fine print so you don’t have to: insurance conditions, concession cards overseas, customs rules for prescriptions and packing systems that work.',
+    byline: 'Good preparation turns nerves into confidence.',
+    type: 'AI Correspondent',
+  },
+  'Rosie Tran': {
+    bio: 'Rosie tracks fare sales, exchange rates and long-stay rentals, always in Australian dollars and always with the date prices were checked. Her articles are general information, not financial advice.',
+    byline: 'Spend on the experience, not the extras.',
+    type: 'AI Correspondent',
+  },
+};
+
+const authorMeta = authorBios[author.name] || {
+  bio: 'Contributing senior travel correspondent dedicated to practical, age-positive exploration.',
+  byline: 'Travel well, travel comfortably.',
+  type: 'AI Correspondent',
+};
 ---
 
 <BaseLayout
@@ -149,23 +183,42 @@ const currentArticleId = entry.id;
     )}
 
     <!-- Author Bio Card -->
-    <div class="rounded-3xl p-6 sm:p-8 glass-panel flex flex-col sm:flex-row items-center sm:items-start gap-5">
-      <img
-        src={author.avatar}
-        alt={author.name}
-        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover ring-4 ring-brand-500/20 flex-shrink-0"
-      />
-      <div class="space-y-2 text-center sm:text-left">
-        <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-          <h3 class="font-serif text-lg font-bold text-slate-900 dark:text-white">
-            About {author.name}
-          </h3>
-          <span class="text-xs font-semibold px-2 py-0.5 rounded bg-brand-50 dark:bg-brand-950/60 text-brand-700 dark:text-brand-300 inline-block">
-            {author.role || 'Senior Travel Editor'}
-          </span>
+    <div class="rounded-3xl p-6 sm:p-8 glass-panel flex flex-col sm:flex-row items-center sm:items-start gap-5 border border-slate-200/80 dark:border-slate-800">
+      <div class="relative flex-shrink-0">
+        <img
+          src={author.avatar}
+          alt={author.name}
+          class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover ring-4 ring-brand-500/30 shadow-md"
+        />
+        <div class="absolute -bottom-1 -right-1 px-1.5 py-0.5 rounded-full bg-slate-900 text-white dark:bg-slate-800 dark:text-brand-300 text-[9px] font-bold shadow-sm border border-white/20">
+          AI
         </div>
+      </div>
+      <div class="space-y-2 text-center sm:text-left flex-1 min-w-0">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div class="flex items-center justify-center sm:justify-start gap-2">
+            <h3 class="font-serif text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+              {author.name}
+            </h3>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-md bg-brand-50 dark:bg-brand-950/60 text-brand-700 dark:text-brand-300 inline-block">
+              {author.role || 'Correspondent'}
+            </span>
+          </div>
+          <a
+            href="/about"
+            class="text-xs font-bold text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1 justify-center"
+          >
+            <span>Meet our team</span>
+            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <p class="text-xs italic text-brand-700 dark:text-brand-300">
+          “{authorMeta.byline}”
+        </p>
         <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-          Contributing senior travel analyst focusing on accessible global transport, cultural slow tourism, and high-value itineraries for retired explorers.
+          {authorMeta.bio}
         </p>
       </div>
     </div>

@@ -1,14 +1,14 @@
 ---
 title: "Off-Peak Qantas and Jetstar Fares: When Australian Retirees Score the Best Prices"
-description: "Marcus Sterling breaks down exactly which days, weeks and booking tricks put Qantas and Jetstar fares at their cheapest — and why retired travellers are perfectly placed to grab them."
+description: "Rosie Tran breaks down exactly which days, weeks and booking tricks put Qantas and Jetstar fares at their cheapest — and why retired travellers are perfectly placed to grab them."
 pubDate: 2026-08-28
 category: "Budget & Deals"
 featured: false
 readingTime: "5 min read"
 author:
-  name: "Marcus Sterling"
-  role: "Financial & Travel Columnist"
-  avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Rosie Tran"
+  role: "Budget & Deals Correspondent"
+  avatar: "/images/authors/rosie-tran.jpg"
 image:
   url: "https://images.unsplash.com/photo-1584704274223-4df579b6cbff?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "A Qantas Airbus A380 in red and white livery climbing into a blue sky after take-off from Sydney"
@@ -28,7 +28,7 @@ Airlines price seats the way supermarkets price bananas — supply and demand, u
 
 ## Qantas or Jetstar: Which Actually Saves You More?
 
-Short answer: it depends what you value, and Marcus is not here to pretend one is universally "better."
+Short answer: it depends what you value, and Rosie is not here to pretend one is universally "better."
 
 **Jetstar** wins on headline price for point-to-point leisure routes — think Sydney to the Gold Coast or Melbourne to Perth — especially when you book into their regular **Friday Frenzy** sales. But the low fare is a starter price: checked baggage, seat selection and any flexibility cost extra, so a "cheap" fare can creep up fast if you need to change it.
 
@@ -50,4 +50,4 @@ Short answer: it depends what you value, and Marcus is not here to pretend one i
 
 You don't need a travel hacking degree to fly cheaply within Australia — you need a flexible calendar and about ten minutes of comparison shopping, and retirees have both in spades. Skip the school holiday scramble, fly midweek where you can, and let the family with the rigid dates pay the premium fare while you take the $79 seat next to the window.
 
-Go get that deal, — Marcus
+Go get that deal, — Rosie

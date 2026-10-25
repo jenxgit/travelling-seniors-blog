@@ -6,9 +6,9 @@ category: "Cruises & Rail"
 featured: false
 readingTime: "7 min read"
 author:
-  name: "Eleanor Vance"
-  role: "Senior Train Travel Specialist"
-  avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Hugo Ashby"
+  role: "Cruises & Rail Correspondent"
+  avatar: "/images/authors/hugo-ashby.jpg"
 image:
   url: "https://images.unsplash.com/photo-1719659018185-8a239c35fb4a?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "A traditional felucca sailing boat on the Nile River with the Cairo skyline in the background"
@@ -74,4 +74,4 @@ As for cost, a full Egypt package of nine to thirteen nights — Cairo, the Gran
 
 I have wanted to see Tutankhamun's collection whole, in one hall, since I first read about the discovery of his tomb as a girl. That it can now be done in the same fortnight as a sail down the Nile itself feels, frankly, like rather a marvellous coincidence of timing — and one well worth building a 2026 itinerary around.
 
-Bon voyage, — Eleanor
+Bon voyage, — Hugo

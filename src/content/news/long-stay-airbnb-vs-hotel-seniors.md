@@ -1,14 +1,14 @@
 ---
 title: "Long-Stay Airbnb vs Hotel: Which Actually Saves You More Over a Month Abroad?"
-description: "Marcus Sterling runs the real numbers on a month-long stay overseas — comparing nightly hotel rates against long-stay Airbnb discounts, the fees nobody budgets for, and the grocery savings that quietly win the argument."
+description: "Rosie Tran runs the real numbers on a month-long stay overseas — comparing nightly hotel rates against long-stay Airbnb discounts, the fees nobody budgets for, and the grocery savings that quietly win the argument."
 pubDate: 2026-09-20
 category: "Budget & Deals"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Marcus Sterling"
-  role: "Financial & Travel Columnist"
-  avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Rosie Tran"
+  role: "Budget & Deals Correspondent"
+  avatar: "/images/authors/rosie-tran.jpg"
 image:
   url: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "A bright, modern apartment living room with a sofa, coffee table and large window, set up for a long-stay rental"
@@ -16,7 +16,7 @@ image:
 tags: ["Budget", "Accommodation", "Airbnb", "Long-Stay", "Travel Tips", "Australia"]
 ---
 
-Here's the number that trips up most retirees planning a month away: a hotel room quoted at **$140 a night** looks cheaper than an apartment listed at **$165 a night**. Book the hotel, right? Wrong — and the gap is bigger than you think once you do the maths Marcus is about to do for you.
+Here's the number that trips up most retirees planning a month away: a hotel room quoted at **$140 a night** looks cheaper than an apartment listed at **$165 a night**. Book the hotel, right? Wrong — and the gap is bigger than you think once you do the maths Rosie is about to do for you.
 
 ## The Nightly Rate Trap
 
@@ -51,7 +51,7 @@ None of this is free money, and a savvy retiree checks these before booking, not
 
 ## When the Hotel Still Wins
 
-Marcus isn't here to tell you Airbnb wins every time, because it doesn't:
+Rosie isn't here to tell you Airbnb wins every time, because it doesn't:
 
 - **Stays under 10–14 nights** rarely hit a discount steep enough to offset the extra admin and lack of daily service.
 - **Free, flexible cancellation** matters more than most people admit — hotel loyalty program bookings are far easier to change or cancel without penalty than most long-stay rental contracts, which often lock in non-refundable terms past a certain date.
@@ -60,7 +60,7 @@ Marcus isn't here to tell you Airbnb wins every time, because it doesn't:
 
 ![A hotel room with crisp white bedding, a bedside lamp and city views through the window](https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=1600&h=900&q=80 "Daily housekeeping, front-desk help and flexible cancellation are the real product a hotel is selling — and for some trips, that's worth paying for")
 
-## Marcus's Bottom Line
+## Rosie's Bottom Line
 
 For a stay of four weeks or more, the long-stay rental wins on pure dollars almost every time — usually by $1,000 to $1,800 a month for a couple once groceries are factored in properly. For anything under two weeks, run the numbers before assuming the apartment is cheaper, because it often isn't once the cleaning fee and service fee land.
 
@@ -74,4 +74,4 @@ For a stay of four weeks or more, the long-stay rental wins on pure dollars almo
 
 Do the sums properly and the "expensive-looking" apartment usually turns out to be the bargain. Just don't let the nightly rate on the search results page make the decision for you.
 
-Go get that deal, — Marcus
+Go get that deal, — Rosie

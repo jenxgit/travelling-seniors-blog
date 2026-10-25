@@ -1,14 +1,14 @@
 ---
 title: "Packing Light After 60: The Two-Bag Rule for Long Trips"
-description: "Dr. Arthur Campbell makes the case for travelling with one carry-on and one checked case — never more — and lays out the exact system that gets a six-week trip to fit in both."
+description: "Frank Delaney makes the case for travelling with one carry-on and one checked case — never more — and lays out the exact system that gets a six-week trip to fit in both."
 pubDate: 2026-09-11
 category: "Travel Tips"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Dr. Arthur Campbell"
-  role: "Travel Tips Columnist"
-  avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Frank Delaney"
+  role: "Travel Tips Correspondent"
+  avatar: "/images/authors/frank-delaney.jpg"
 image:
   url: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "An open suitcase on a bed, half-packed with neatly folded clothes"
@@ -63,4 +63,4 @@ I will not pretend the two-bag rule is universal, and any columnist who insists 
 
 Two bags will get you through a long weekend or a two-month itinerary with equal ease, provided you pack for laundering rather than for every contingency your imagination can produce. It will save you baggage fees, spare your back on the cobblestones, and mean you have a free hand for the thing that actually matters at the end of a long travel day — finding the hotel, rather than wrangling the fourth suitcase into the lift that quite clearly was not built for it.
 
-Safe travels and sharp paperwork, — Dr. Arthur Campbell
+Safe travels and sharp paperwork, — Frank Delaney

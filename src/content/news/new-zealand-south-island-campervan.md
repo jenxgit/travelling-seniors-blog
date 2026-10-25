@@ -1,14 +1,14 @@
 ---
 title: "New Zealand's South Island by Campervan: A Slow Traveller's Guide"
-description: "Sofia Mendez maps out an unhurried, drive-it-yourself loop through New Zealand's South Island — the towns worth lingering in, the roads worth taking slowly, and what Australian travellers should know before they collect the keys."
+description: "Wren Callaway maps out an unhurried, drive-it-yourself loop through New Zealand's South Island — the towns worth lingering in, the roads worth taking slowly, and what Australian travellers should know before they collect the keys."
 pubDate: 2026-09-02
 category: "Destinations"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Sofia Mendez"
+  name: "Wren Callaway"
   role: "Destinations Correspondent"
-  avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=80"
+  avatar: "/images/authors/wren-callaway.jpg"
 image:
   url: "https://images.unsplash.com/photo-1765647927486-227ed8c0b5f5?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "A campervan driving along a quiet South Island road with mountains rising in the background"
@@ -52,4 +52,4 @@ Skip the Australian summer holiday crowds of December and January if you can, wh
 
 A thermos, for the mornings that call for tea on a fold-out chair before anyone else is awake. A paper map as backup to the phone, for the stretches with no signal at all. Layers, always layers — the island can move through three seasons in a single afternoon, particularly near Queenstown and Fiordland. And patience for the single-lane bridges, most of which are shared with rail traffic and all of which ask you to simply wait your turn, which is, in the end, rather good practice for the whole trip.
 
-Until the next slow morning somewhere new, — Sofia
+Until the next slow morning somewhere new, — Wren

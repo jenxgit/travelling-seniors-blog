@@ -1,14 +1,14 @@
 ---
 title: "Why Now Is a Good Time to Book Europe: The Aussie Dollar Advantage Explained"
-description: "Marcus Sterling breaks down what a stronger Australian dollar actually means for your 2026-27 Europe cruise or tour price — and the practical moves that lock the saving in before the rate moves again."
+description: "Rosie Tran breaks down what a stronger Australian dollar actually means for your 2026-27 Europe cruise or tour price — and the practical moves that lock the saving in before the rate moves again."
 pubDate: 2026-09-25
 category: "Budget & Deals"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Marcus Sterling"
-  role: "Financial & Travel Columnist"
-  avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Rosie Tran"
+  role: "Budget & Deals Correspondent"
+  avatar: "/images/authors/rosie-tran.jpg"
 image:
   url: "https://images.unsplash.com/photo-1764865988208-cc886b3d33c6?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "Scattered 50 and 100 euro banknotes fanned out on a flat surface"
@@ -49,11 +49,11 @@ Which means the saving from a stronger dollar isn't sitting there waiting for yo
 
 ![A river winds through a green, hilly European town, the kind of scenery a Rhine or Danube cruise itinerary is built around](https://images.unsplash.com/photo-1764004052532-f2f5b1bdc39d?auto=format&fit=crop&w=1600&h=900&q=80 "Whether it's a Rhine river cruise or a coach tour through the Dordogne, the itinerary is priced in a currency that isn't ours")
 
-## Marcus's Honest Caveat
+## Rosie's Honest Caveat
 
 I'm not a currency forecaster and neither is anyone else who tells you with total confidence where the Aussie dollar sits in twelve months — I've been doing this column long enough to have watched plenty of "sure things" go the other way. What I can tell you is where the dollar has actually been: meaningfully stronger against both the euro and the US dollar than it was at the start of the year, driven largely by a weaker US dollar and firm commodity prices propping up ours.
 
-That's not a guarantee it stays this way. It's a genuinely favourable window, not a one-way bet, and the sensible move is the same one that works in any market: lock in the good rate on the things you're already planning to buy, rather than trying to time the absolute peak. Nobody, including Marcus, picks the peak.
+That's not a guarantee it stays this way. It's a genuinely favourable window, not a one-way bet, and the sensible move is the same one that works in any market: lock in the good rate on the things you're already planning to buy, rather than trying to time the absolute peak. Nobody, including Rosie, picks the peak.
 
 ## The Bottom Line
 
@@ -69,4 +69,4 @@ A 4-5% currency tailwind on a $8,000-$15,000 European cruise or tour package is 
 
 The Aussie dollar won't sit this strong forever, and nobody rings a bell when it turns. If a European trip has been on the list, the numbers right now are doing you a favour — the trick is actually banking it before they change their mind.
 
-Go get that deal, — Marcus
+Go get that deal, — Rosie

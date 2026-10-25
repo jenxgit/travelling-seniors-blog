@@ -1,14 +1,14 @@
 ---
 title: "Beating Jet Lag After 60: A Practical Guide to Circadian Rhythm on Long-Haul Flights"
-description: "Kenji Sato explains how light, sleep timing and hydration can ease jet lag on the long haul from Australia to Europe and beyond, with a GP's caution built in for those managing medication schedules."
+description: "Maya Okafor explains how light, sleep timing and hydration can ease jet lag on the long haul from Australia to Europe and beyond, with a GP's caution built in for those managing medication schedules."
 pubDate: 2026-09-25
 category: "Health & Wellness"
 featured: false
 readingTime: "6 min read"
 author:
-  name: "Kenji Sato"
-  role: "Wellness & Mobility Writer"
-  avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200&q=80"
+  name: "Maya Okafor"
+  role: "Health & Wellness Correspondent"
+  avatar: "/images/authors/maya-okafor.jpg"
 image:
   url: "https://images.unsplash.com/photo-1566212775038-532d06eda485?auto=format&fit=crop&w=1600&h=900&q=80"
   alt: "An aircraft silhouetted against a golden sunrise or sunset sky, seen from the ground near an airport"
@@ -46,4 +46,4 @@ The return journey deserves the same planning as the outbound one, and Australia
 
 Jet lag is not something to be defeated so much as managed with a little foresight — a nudge to the bedtime clock before you leave, a walk in the daylight when you arrive, and patience with a body that is, in its own unhurried way, catching up to where you already are.
 
-Travel gently, — Kenji
+Travel gently, — Maya
